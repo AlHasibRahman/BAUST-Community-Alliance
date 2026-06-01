@@ -6,6 +6,7 @@ import BlogPage from "../Components/BlogPage";
 import StoriesPage from "../Components/StoriesPage";
 import CreateContent from "../Components/CreateContent";
 import PublicationPage from "../Components/PublicationPage"
+import Content from "../Components/Content";
 
 export default function routes() {
     const router = createBrowserRouter([
@@ -17,7 +18,8 @@ export default function routes() {
                 { path: "about", element: <AboutUs /> },
                 { path: "category/blog", element: <BlogPage />},
                 { path: "category/story", element: <StoriesPage />},
-                { path: "category/publication", element: <PublicationPage />}
+                { path: "category/publication", element: <PublicationPage />},
+                { path: "content/:id", element: <Content />}
             ]
         }
     ]);

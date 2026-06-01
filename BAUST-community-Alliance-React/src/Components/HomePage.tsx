@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import '../Components/HomePage.css'
+import './HomePage.css'
 import { api } from '../Services/api';
 import video from '../Videos/Baust-video.mp4'
 import ContentCard from './ContentCard';
